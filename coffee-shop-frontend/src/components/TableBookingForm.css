@@ -1,0 +1,58 @@
+/* Main form container styling */
+.booking-form-container {
+  background-color: #f7f3f0;
+  padding: 2.5rem 1rem;
+}
+
+/* Card styling */
+.booking-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  background-color: #ffffff;
+}
+
+/* Card hover effect */
+.booking-card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+/* Form title styling */
+.booking-card .card-header h3 {
+  color: #3e2723;
+  font-weight: 700;
+}
+
+/* Form input styling */
+.booking-form-container .form-control {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Form input focus effect */
+.booking-form-container .form-control:focus {
+  border-color: #b7950b;
+  box-shadow: 0 0 0 0.25rem rgba(183, 149, 11, 0.25);
+}
+
+/* Button styling */
+.booking-form-container .btn-primary {
+  background-color: #3e2723;
+  border-color: #3e2723;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 2rem;
+}
+
+/* Button hover effect */
+.booking-form-container .btn-primary:hover {
+  background-color: #5d4037;
+  border-color: #5d4037;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}

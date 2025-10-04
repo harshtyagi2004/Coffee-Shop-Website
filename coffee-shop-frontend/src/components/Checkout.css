@@ -1,0 +1,96 @@
+/* Main container and card for the checkout page */
+.checkout-container {
+  background-color: #f7f3f0;
+  padding: 2.5rem 1rem;
+}
+
+.checkout-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+/* Form field styling */
+.checkout-container .form-control,
+.checkout-container .form-select {
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 0.75rem 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Form field focus effect */
+.checkout-container .form-control:focus,
+.checkout-container .form-select:focus {
+  border-color: #b7950b;
+  box-shadow: 0 0 0 0.25rem rgba(183, 149, 11, 0.25);
+}
+
+/* Button styling */
+.checkout-container .btn-primary,
+.checkout-container .btn-success {
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 2rem;
+}
+
+/* Button hover effect */
+.checkout-container .btn-primary:hover,
+.checkout-container .btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Back button styling */
+.checkout-container .btn-secondary {
+  font-weight: bold;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  padding: 0.75rem 2rem;
+}
+
+/* ============================ */
+/* NEW PAYMENT OPTION STYLES */
+/* ============================ */
+
+/* Style the label as a card */
+.payment-option-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Add a hover effect */
+.payment-option-card:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Hide the default radio button input */
+.payment-option-card input[type="radio"] {
+  display: none;
+}
+
+/* Style the checkmark */
+.payment-option-card .form-check-label::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  transition: all 0.2s ease;
+}
+
+/* Style the checkmark when the radio button is selected */
+.payment-option-card input[type="radio"]:checked + .form-check-label::before {
+  background-color: #007bff;
+  box-shadow: inset 0 0 0 3px white;
+}

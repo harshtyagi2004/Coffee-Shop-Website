@@ -1,0 +1,26 @@
+/* Keyframes for a gentle, floating movement */
+@keyframes float {
+  0% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
+/* Styles for the coffee cup */
+.animated-coffee-cup {
+  width: 300px;
+  cursor: pointer;
+  animation: float 4s ease-in-out infinite;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.animated-coffee-cup:hover {
+  transform: scale(1.1) rotate(5deg);
+  animation-play-state: paused;
+}

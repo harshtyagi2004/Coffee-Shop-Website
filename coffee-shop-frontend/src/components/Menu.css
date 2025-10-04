@@ -1,0 +1,126 @@
+/* New: Set the background color for the entire page */
+.menu-page-background {
+    background-color: #4c2305;
+}
+
+/* General container styles for better spacing */
+.menu-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* Category Tabs - New Styles */
+.category-buttons .btn {
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  color: #590808;
+  padding: 0.75rem 1rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  border-radius: 0; /* Remove rounded corners for a tab look */
+}
+
+/* Hover and Focus Effect for Inactive Tabs */
+.category-buttons .btn:hover {
+  color: #eb5d4052;
+  border-bottom: 2px solid #ccc;
+  transform: translateY(0); /* Remove the lift effect */
+  box-shadow: none; /* Remove the shadow */
+}
+
+/* Active Tab Style - This makes the selected tab stand out */
+.category-buttons .btn-primary,
+.category-buttons .btn-primary:hover {
+  background-color: transparent;
+  color: #652007;
+  border-bottom: 2px solid #7b1506; /* Bold bottom border for the active tab */
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* Card - Enhanced Effects */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Image Hover Effect */
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* "Add to Cart" Button Effect */
+.card-footer .btn-primary {
+  transition: transform 0.2s ease;
+}
+
+/* A subtle "bounce" effect on hover */
+.card-footer .btn-primary:hover {
+  transform: scale(1.03);
+}
+
+/* ================================== */
+/* NEW CODE FOR IMAGE ZOOM */
+/* ================================== */
+
+/* New: Main card class for the entire card */
+.menu-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures the zoom doesn't go outside the card */
+  transition: all 0.3s ease-in-out;
+}
+
+/* New: Image class */
+.menu-card-image {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom */
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* New: The actual zoom hover effect */
+.menu-card:hover .menu-card-image {
+  transform: scale(1.1);
+}
